@@ -1,14 +1,15 @@
 class Director {
-    private String directorName;
+    private String fullName;
+
 
     @Override
     public String toString() {
         return "Director{" +
-                "fullName='" + directorName + '\'' +
+                "fullName='" + fullName + '\'' +
                 '}';
     }
 
-    public String getDirectorName() {
-        return directorName;
+    public String getFullName() {
+        return fullName;
     }
 }

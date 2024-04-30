@@ -1,18 +1,19 @@
 import java.util.List;
 
-public class Movies {
+class Movie {
     private String name;
     private int year;
+    private String description;
     private Director director;
     private List<Actor> cast;
 
-    // Getters and Setters
 
     @Override
     public String toString() {
         return "Movie{" +
                 "name='" + name + '\'' +
                 ", year=" + year +
+                ", description='" + description + '\'' +
                 ", director=" + director +
                 ", cast=" + cast +
                 '}';
@@ -34,6 +35,3 @@ public class Movies {
         return name;
     }
 }
-
-
-

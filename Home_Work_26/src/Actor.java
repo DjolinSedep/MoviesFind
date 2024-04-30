@@ -1,18 +1,19 @@
 class Actor {
-    private String actorName;
+    private String fullName;
     private String role;
+
 
 
     @Override
     public String toString() {
         return "Actor{" +
-                "fullName='" + actorName + '\'' +
+                "fullName='" + fullName + '\'' +
                 ", role='" + role + '\'' +
                 '}';
     }
 
-    public String getActorName() {
-        return actorName;
+    public String getFullName() {
+        return fullName;
     }
 
     public String getRole() {
