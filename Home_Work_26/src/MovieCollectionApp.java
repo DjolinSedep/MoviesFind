@@ -47,7 +47,7 @@ class MovieCollectionApp {
             for (Actor actor : movie.getCast()) {
                 if (actor.getFullName().equalsIgnoreCase(actorName)) {
                     result.add(movie);
-                    break; // Найден фильм с участием актера, переходим к следующему фильму
+                    break;
                 }
             }
         }
@@ -79,14 +79,14 @@ class MovieCollectionApp {
             for (Actor actor : movie.getCast()) {
                 if (actor.getFullName().equalsIgnoreCase(actorName)) {
                     System.out.println(movie.getName() + ": " + actor.getRole());
-                    break; // Найдена роль актера, переходим к следующему фильму
+                    break;
                 }
             }
         }
     }
 
     public void printAllActorsWithRoles() {
-        Map<String, String> actorRolesMap = new TreeMap<>(); // TreeMap автоматически сортирует по ключу (имени актера)
+        Map<String, String> actorRolesMap = new TreeMap<>();
         for (Movie movie : movies) {
             for (Actor actor : movie.getCast()) {
                 actorRolesMap.put(actor.getFullName(), actor.getRole());
